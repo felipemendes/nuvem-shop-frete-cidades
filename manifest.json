@@ -9,6 +9,14 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
     },
+    "background": {
+        "scripts": [
+            "src/background/background.js"
+        ],
+        "matches": [
+            "*://*/*"
+        ]
+    },
     "browser_action": {
         "default_icon": "icons/icon19.png",
         "default_title": "Nuvem Shop frete manual por cidades"
