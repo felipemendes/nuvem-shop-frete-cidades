@@ -12,7 +12,7 @@ A alternativa orientada pelos atendentes da Nuvem Shop, para este caso, é criar
 Portanto, esta extensão possibilita marcar todas as cidades para facilitar a remoção, visto que em estados com um grande volume de cidades é muito trabalhoso adicionar todas as opções manualmente.
 
 ## Melhorias
-Utilizar os scripts do próprio painel para evitar a importação de bibliotecas externas. Foi importado a lib [Select2](https://github.com/select2/select2), por exemplo. Porém não é o mesmo script utilizado pela Nuvem Shop e o comportamento não está totalmente funcional.
+Utilizar os scripts do próprio painel para evitar a importação de bibliotecas externas.
 
 ## Instalação
 
@@ -29,7 +29,30 @@ $ git clone https://github.com/felipemendes/nuvem-shop-frete-cidades
 2. Selecione `Limitar esta opção segundo peso, preço e/ou região.`
 3. Selecione um estado
 4. Clique no ícone da extensão na barra de ferramentas
-5. Um novo campo será exibido abaixo do estado, basta marcá-lo e clicar em `Adicionar`
+5. Um novo campo será exibido abaixo do estado, basta marcá-lo e clicar em `Adicionar` ou `Salvar alterações`
+
+## Script
+Script em jQuery usado para gerar o checkbox e selecionar as cidades, caso não queria instalar a extensão.
+
+```javascript
+$(".city-placeholder .province-row label").append('<label class="checkboxLabel">Todas as cidades<input type="checkbox" class="input-checkbox"><span class="checkmark"></span></label>');
+
+$(".province-row").each(function (index) {
+    var idCidade = "#" + $(this).attr('id');
+    $(idCidade).click(function () {
+
+        if ($(idCidade + " .input-checkbox").is(':checked')) {
+            $(idCidade + " select > option").prop("selected", "selected");
+            $(idCidade + " select").trigger("change");
+        } else {
+            $(idCidade + " select > option").removeAttr("selected");
+            $(idCidade + " select").trigger("change");
+        }
+
+    });
+
+});
+```
 
 > Versión en español
 # Tienda Nube flete manual por ciudades
@@ -45,7 +68,7 @@ La alternativa orientada por los asistentes de la Tienda Nube, para este caso, e
 Por lo tanto, esta extensión permite marcar todas las ciudades para facilitar la remoción, ya que en estados con un gran volumen de ciudades es muy laborioso añadir todas las opciones manualmente.
 
 ## Mejoras
-Utilizar las secuencias de comandos del propio panel para evitar la importación de bibliotecas externas. Se ha importado lib [Select2](https://github.com/select2/select2), por ejemplo. Pero no es el mismo script utilizado por la Tienda Nube y el comportamiento no es totalmente funcional.
+Utilizar las secuencias de comandos del propio panel para evitar la importación de bibliotecas externas.
 
 ## Instalación
 
@@ -62,4 +85,27 @@ $ git clone https://github.com/felipemendes/nuvem-shop-frete-cidades
 2. Seleccione `Limitar esta opción según peso, precio y/o región.`
 3. Seleccione un estado
 4. Haga clic en el icono de extensión de la barra de herramientas
-5. Un nuevo campo se muestra debajo del estado, simplemente marque y haga clic en `Agregar`
+5. Un nuevo campo se muestra debajo del estado, simplemente marque y haga clic en `Agregar` o `Guardar`
+
+## Script
+Script en jQuery utilizado para generar el checkbox y seleccionar las ciudades, si no quería instalar la extensión.
+
+```javascript
+$(".city-placeholder .province-row label").append('<label class="checkboxLabel">Todas as cidades<input type="checkbox" class="input-checkbox"><span class="checkmark"></span></label>');
+
+$(".province-row").each(function (index) {
+    var idCidade = "#" + $(this).attr('id');
+    $(idCidade).click(function () {
+
+        if ($(idCidade + " .input-checkbox").is(':checked')) {
+            $(idCidade + " select > option").prop("selected", "selected");
+            $(idCidade + " select").trigger("change");
+        } else {
+            $(idCidade + " select > option").removeAttr("selected");
+            $(idCidade + " select").trigger("change");
+        }
+
+    });
+
+});
+```

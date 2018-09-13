@@ -2,7 +2,6 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 
     var scripts = [
         'js/jquery.min.js',
-        'js/select2.min.js',
         'src/inject/inject.js'
     ];
     scripts.forEach(function (script) {
