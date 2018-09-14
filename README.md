@@ -11,6 +11,9 @@ A alternativa orientada pelos atendentes da Nuvem Shop, para este caso, é criar
 
 Portanto, esta extensão possibilita marcar todas as cidades para facilitar a remoção, visto que em estados com um grande volume de cidades é muito trabalhoso adicionar todas as opções manualmente.
 
+![screen-1](/screenshots/screen-1.png "screen-1")
+![screen-2](/screenshots/screen-2.png "screen-2")
+
 ## Melhorias
 Utilizar os scripts do próprio painel para evitar a importação de bibliotecas externas.
 
