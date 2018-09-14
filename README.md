@@ -1,5 +1,5 @@
 > Versão em português
-# Nuvem Shop frete manual por cidades
+# Nuvem Shop - Frete manual por cidades
 
 Extensão do Chrome para adicionar todas as cidades do estado selecionado em Frete Manual no painel Nuvem.
 
@@ -18,6 +18,10 @@ Portanto, esta extensão possibilita marcar todas as cidades para facilitar a re
 Utilizar os scripts do próprio painel para evitar a importação de bibliotecas externas.
 
 ## Instalação
+
+Instale através da Chrome Web Store: [Nuvem Shop - Frete manual por cidades](https://chrome.google.com/webstore/detail/nuvem-shop-frete-manual-p/pdegncemdjbjhjbgbdigdljdpookkcoi)
+
+ou 
 
 1. Clone o repositório
 ```
@@ -74,6 +78,10 @@ Por lo tanto, esta extensión permite marcar todas las ciudades para facilitar l
 Utilizar las secuencias de comandos del propio panel para evitar la importación de bibliotecas externas.
 
 ## Instalación
+
+Instalar a través de Chrome Web Store: [Nuvem Shop - Frete manual por cidades](https://chrome.google.com/webstore/detail/nuvem-shop-frete-manual-p/pdegncemdjbjhjbgbdigdljdpookkcoi)
+
+ou 
 
 1. Clone el repositorio
 ```

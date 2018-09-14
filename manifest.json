@@ -1,6 +1,6 @@
 {
-    "name": "Nuvem Shop frete manual por cidades",
-    "version": "0.0.1",
+    "name": "Nuvem Shop - Frete manual por cidades",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "Adiciona todas as cidades do estado selecionado",
     "homepage_url": "https://github.com/felipemendes/nuvem-shop-frete-cidades",
